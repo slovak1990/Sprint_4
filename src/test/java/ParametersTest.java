@@ -5,7 +5,6 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import static org.junit.Assert.assertEquals;
 
 @Epic("Checking the output of the input of the first and last name to the bank card")
@@ -39,6 +38,7 @@ public class ParametersTest {
                 {"Тимоти-Шаламе", false},
                 {"1234567891123456789", false},
                 {"           ", false},
+                {null, false},
         };
     }
 
